@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Pizza-Icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style_cardapio.css">
+    <title>Cardápio</title>
+</head>
+<body>
+    <header>
+        <h1>Cardápio</h1>
+        <div class="pizza-option" id="ModaDaCasa">
+            <div class="pizza-details">
+                <p class="pizza-name">Moda da Casa</p>
+                <p class="pizza-price">&#36;50</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="ModaDaCasa">+</button>
+                <button data-action="decrease" data-pizza="ModaDaCasa">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_ModaDaCasa">
+            </div>
+        </div>
+        <div class="pizza-option" id="CheesePremium">
+            <div class="pizza-details">
+                <p class="pizza-name">Cheese Premium</p>
+                <p class="pizza-price">&#36;66</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="CheesePremium">+</button>
+                <button data-action="decrease" data-pizza="CheesePremium">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_CheesePremium">
+            </div>
+        </div>
+        <div class="pizza-option" id="FourFlavors">
+            <div class="pizza-details">
+                <p class="pizza-name">Four Flavors</p>
+                <p class="pizza-price">&#36;60</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="FourFlavors">+</button>
+                <button data-action="decrease" data-pizza="FourFlavors">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_FourFlavors">
+            </div>
+        </div>
+        <div class="pizza-option" id="ShrimpWithCheese">
+            <div class="pizza-details">
+                <p class="pizza-name">ShrimpWithCheese</p>
+                <p class="pizza-price">&#36;80</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="ShrimpWithCheese">+</button>
+                <button data-action="decrease" data-pizza="ShrimpWithCheese">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_ShrimpWithCheese">
+            </div>
+        </div>
+        <div class="pizza-option" id="TrufflePizza">
+            <div class="pizza-details">
+                <p class="pizza-name">Truffle Pizza</p>
+                <p class="pizza-price">&#36;100</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="TrufflePizza">+</button>
+                <button data-action="decrease" data-pizza="TrufflePizza">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_TrufflePizza">
+            </div>
+        </div>
+        <div class="pizza-option" id="VegetarianPizza">
+            <div class="pizza-details">
+                <p class="pizza-name">Vegetarian Pizza</p>
+                <p class="pizza-price">&#36;60</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="VegetarianPizza">+</button>
+                <button data-action="decrease" data-pizza="VegetarianPizza">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_VegetarianPizza">
+            </div>
+        </div>
+        <div class="pizza-option" id="AutumnSpecial">
+            <div class="pizza-details">
+                <p class="pizza-name">Autumn Special</p>
+                <p class="pizza-price">&#36;50</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="AutumnSpecial">+</button>
+                <button data-action="decrease" data-pizza="AutumnSpecial">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_AutumnSpecial">
+            </div>
+        </div>
+        <div class="pizza-option" id="HalloweenSpecial">
+            <div class="pizza-details">
+                <p class="pizza-name">HalloweenSpecial</p>
+                <p class="pizza-price">&#36;50</p>
+            </div>
+            <div class="pizza-controls">
+                <button data-action="increase" data-pizza="HalloweenSpecial">+</button>
+                <button data-action="decrease" data-pizza="HalloweenSpecial">-</button>
+                <input type="number" min="0" max="20" value="0" id="input_HalloweenSpecial">
+            </div>
+        </div>
+        <div id="totais">
+            <p>
+                <label for="totPizzas">Total de Pizzas: </label>
+                <output id="totPizzas">0</output>
+            </p>
+            <p>
+                <label for="totPagar">Total a pagar: </label>
+                <output id="totPagar">0</output>
+            </p>
+            <input type="button" value="Comprar">
+            <input type="reset" value="Cancelar">
+        </div>
+    </header>
+    <script src="JS/script_cardapio.js"></script>
+</body>
+</html>
